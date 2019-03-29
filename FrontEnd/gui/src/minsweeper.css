@@ -1,0 +1,110 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    height: 55px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #4A752C;
+}
+
+.header .restart {
+    margin-left: 10px;
+}
+
+.header .flag-count {
+    width: 70px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    color: white;
+}
+    
+.board-map {
+    /* width: 499px;
+    height: 499px; */
+    background: #abcf5e;
+    border: 1px solid #4A752C;
+    border-bottom: none; 
+}
+.board-map .row {
+    display: flex;
+    height: 50px; 
+}
+
+.board-map .row:last-child {
+    border-bottom: none;
+    height: 50px; 
+}
+
+.board-map .row .cell {
+    /* border-right: 1px solid #4A752C;
+    border-top: 1px solid #4A752C; 
+    border-left: 1px solid #4A752C; 
+    border-bottom: 1px solid #4A752C;  */
+    width: 49px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px;
+    margin: 4px;
+    background: #c1d565;
+    border-radius: 7px;
+}
+.board-map .row .cell.open {
+    background-color: #e0c3a3; 
+}
+.board-map .row .cell.open:hover {
+    background-color: #d2b99d; 
+}
+.board-map .row .cell:hover {
+    background-color: #4A752C; 
+}
+.board-map .row .cell:last-child {
+    border-right: none; 
+}
+  
+* {
+    margin: 0;
+    padding: 0; 
+}
+  
+html,
+body {
+    height: 100%; 
+}
+html #root,
+body #root {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    background: gray;
+}
+
+html #root .minesweeper,
+body #root .minesweeper {
+    display: flex;
+    flex-direction: column;
+    height: 592px; 
+}
+
+html #root .minesweeper h1,
+body #root .minesweeper h1 {
+    text-align: center;
+    border-left: 1px solid #444;
+    border-top: 1px solid #444;
+    border-right: 1px solid #444; 
+}
+
+.flag.checkered.icon {
+    font-size: 1.9em;
+}
+
+.cell.open.count {
+    font-weight: 800;
+}
+
+.bomb.icon {
+    font-size: 1.8em;
+}
