@@ -14,3 +14,5 @@ Open a differnet terminal window to start React App:
 2. `npm install` to get all dependencies
 3. `npm start` to start React Server.
 4. Visit http://localhost:3000 to play the game.
+
+<img width="880" alt="Screen Shot 2019-03-29 at 8 02 41 PM" src="https://user-images.githubusercontent.com/48612551/55268218-112bd700-525e-11e9-9401-315b39ae7cc8.png">
